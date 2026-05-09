@@ -210,22 +210,31 @@ p { margin: 0 0 1em; }
     left: 0; right: 0;
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
-    padding: 16px;
+    gap: 6px;
+    padding: 14px;
     background: rgba(20, 16, 11, 0.98);
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--line-strong);
     transform: translateY(-120%);
     transition: transform 0.35s ease;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
   }
   .nav-links.open { transform: translateY(0); }
+  .nav-links li { width: 100%; }
   .nav-links a {
-    padding: 16px 18px;
-    font-size: 1.05rem;
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1.02rem;
     border-radius: 10px;
+    box-sizing: border-box;
   }
   .nav-links a.active::after { display: none; }
-  .nav-links a.active { background: rgba(212, 165, 116, 0.1); }
+  .nav-links a.active {
+    background: rgba(212, 165, 116, 0.12);
+    color: var(--amber-bright);
+  }
 }
 
 /* ============= GUMBI ============= */
@@ -1303,10 +1312,16 @@ h2 em, h1 em {
   .about-stats { gap: 16px; margin-top: 32px; padding-top: 28px; }
   .about-stats strong { font-size: clamp(1.8rem, 8vw, 2.4rem); }
   .about-stats span { font-size: 0.65rem; letter-spacing: 2px; }
-  .nav-inner { padding: 0 20px; }
-  .brand img { width: 42px; height: 42px; }
+  .nav-inner { padding: 0 18px; }
+  .brand { gap: 11px; }
+  .brand-logo { width: 42px; height: 42px; }
   .brand-name { font-size: 1.3rem; }
   .brand-sub { font-size: 0.55rem; letter-spacing: 3px; }
+  .menu-toggle {
+    width: 42px; height: 42px;
+    border-color: var(--line);
+  }
+  .menu-toggle.open { border-color: var(--line-strong); background: rgba(212, 165, 116, 0.06); }
 }
 
 @media (max-width: 480px) {
