@@ -9,16 +9,12 @@
   --bg-card: #221912;
   --cream: #f3e3c3;
   --cream-soft: #faf2e0;
-  --cream-dim: #e8d4ac;
   --amber: #d4a574;
   --amber-bright: #e8b87a;
   --gold: #c8975f;
   --gold-deep: #a87842;
   --text-on-dark: #f5e9d3;
   --text-on-dark-muted: #c9b896;
-  --text-on-light: #2a1f15;
-  --text-on-light-muted: #6b563f;
-  --accent: #8b6f47;
   --line: rgba(212, 165, 116, 0.18);
   --line-strong: rgba(212, 165, 116, 0.4);
   --glow: rgba(232, 184, 122, 0.45);
@@ -727,19 +723,12 @@ h2 em, h1 em {
   color: var(--cream-soft);
   font-weight: 400;
 }
-.menu-item-dots { display: none; }
 .menu-item-price {
   font-family: var(--font-serif);
   font-size: 1.15rem;
   color: var(--amber-bright);
   font-weight: 400;
   white-space: nowrap;
-}
-.menu-item-desc {
-  width: 100%;
-  font-size: 0.88rem;
-  color: var(--text-on-dark-muted);
-  margin: 4px 0 0;
 }
 
 /* ============= RECENZIJE CAROUSEL ============= */
@@ -1076,30 +1065,6 @@ h2 em, h1 em {
 .hours-list .day { color: var(--text-on-dark-muted); }
 .hours-list li.today .day { color: var(--amber-bright); }
 
-.contact-socials {
-  display: flex;
-  gap: 12px;
-  margin-top: 24px;
-}
-.social-btn {
-  width: 48px; height: 48px;
-  border-radius: 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--line-strong);
-  color: var(--cream-soft);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.25s ease;
-}
-.social-btn:hover {
-  background: linear-gradient(135deg, var(--amber-bright), var(--gold));
-  color: var(--bg-deep);
-  box-shadow: 0 0 22px var(--glow);
-  transform: translateY(-2px);
-}
-.social-btn svg { width: 22px; height: 22px; }
-
 /* Pill action buttons (kontakt) */
 .contact-pills {
   display: flex;
@@ -1242,12 +1207,6 @@ h2 em, h1 em {
 
 /* ============= UTIL ============= */
 .center-text { text-align: center; }
-.divider {
-  width: 60px; height: 2px;
-  background: var(--amber-bright);
-  margin: 0 auto 28px;
-  box-shadow: 0 0 12px var(--glow);
-}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -1343,7 +1302,7 @@ h2 em, h1 em {
   .btn-primary:hover,
   .btn-ghost:hover,
   .review-btn:hover,
-  .social-btn:hover,
+  .pill-btn:hover,
   .menu-tab:hover {
     transform: none;
   }
