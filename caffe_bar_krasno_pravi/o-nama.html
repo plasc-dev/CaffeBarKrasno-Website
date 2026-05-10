@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#14100b">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,8 +28,6 @@
       <li><a href="index.html">Početna</a></li>
       <li><a href="o-nama.html" class="active">O nama</a></li>
       <li><a href="meni.html">Meni</a></li>
-      <li><a href="recenzije.html">Recenzije</a></li>
-      <li><a href="galerija.html">Galerija</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
     <button class="menu-toggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navLinks">
@@ -85,7 +83,7 @@
       <span class="section-eyebrow" style="justify-content:center; display:inline-flex;">Bitno nam je</span>
       <h2>Tri <em>stvari</em></h2>
     </div>
-    <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+    <div class="features-grid three-cols">
       <div class="feature-card" data-reveal>
         <div class="feature-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
@@ -113,12 +111,109 @@
 
 <section>
   <div class="container">
+    <div class="center-text" data-reveal>
+      <span class="section-eyebrow" style="justify-content:center; display:inline-flex;">Recenzije</span>
+      <h2>Što <em>kažu gosti</em></h2>
+    </div>
+
+    <div class="reviews-summary" data-reveal style="margin-top: 30px;">
+      <div class="summary-score">4.6</div>
+      <div class="summary-meta">
+        <div class="summary-stars">★★★★★</div>
+        <span>314 recenzija na Google Mapsu</span>
+      </div>
+    </div>
+
+    <div class="reviews-wrap" data-reveal>
+      <div class="reviews-stage">
+        <article class="review-card" data-pos="left">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Najbolji kafić u kvartu, bez razmišljanja. Kava je uvijek jednako dobra, a ekipa za šankom te pamti od drugog dolaska. Tu se osjećaš kao kod kuće.</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div>
+              <span class="review-name">Marko Horvat</span>
+              <span class="review-source">Google recenzije</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-pos="center">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Idealno mjesto za večernje druženje. Biljar, dobra muzika, cijene više nego korektne. Vlasnik i konobari uvijek raspoloženi za razgovor — rijetkost danas. Stalna postaja kad sam u Bukovcu.</p>
+          <div class="review-author">
+            <div class="review-avatar">I</div>
+            <div>
+              <span class="review-name">Ivana Kovačić</span>
+              <span class="review-source">Google recenzije</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-pos="right">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Volim navratiti subotom kad ima žive glazbe. Ekipa je prijateljska, atmosfera opuštena. Cappuccino je top, a domaći kolači su za ne ispustit.</p>
+          <div class="review-author">
+            <div class="review-avatar">T</div>
+            <div>
+              <span class="review-name">Tomislav Babić</span>
+              <span class="review-source">Google recenzije</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-pos="hidden">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Latte art je odličan, vidi se da znaju što rade. Mali, ugodan kafić koji ima dušu. Jedan od onih koji ne moraš tražiti — kad uđeš jednom, vraćaš se.</p>
+          <div class="review-author">
+            <div class="review-avatar">P</div>
+            <div>
+              <span class="review-name">Petra Novak</span>
+              <span class="review-source">Google recenzije</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-pos="hidden">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">Mali kafić, ali pun srca. Vlasnik prepoznaje stalne goste i to me osvojilo. Vikendom zna biti gužva pa je teže naći mjesto, ali to je samo dokaz da je dobro.</p>
+          <div class="review-author">
+            <div class="review-avatar">D</div>
+            <div>
+              <span class="review-name">Damir Perić</span>
+              <span class="review-source">Google recenzije</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="reviews-controls">
+        <button class="review-btn review-prev" aria-label="Prethodna recenzija">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="review-dots">
+          <button class="review-dot active" aria-label="Recenzija 1"></button>
+          <button class="review-dot" aria-label="Recenzija 2"></button>
+          <button class="review-dot" aria-label="Recenzija 3"></button>
+          <button class="review-dot" aria-label="Recenzija 4"></button>
+          <button class="review-dot" aria-label="Recenzija 5"></button>
+        </div>
+        <button class="review-btn review-next" aria-label="Sljedeća recenzija">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="container">
     <div class="cta-banner" data-reveal>
       <h2>Najlakše je <em>da svratiš</em></h2>
-      <p>Sve ovo je puno teže prepričati nego doživjeti. Tu smo svaki dan, od 7 ujutro do 11 navečer — ovaj put bez izgovora.</p>
+      <p>Sve ovo je puno teže prepričati nego doživjeti. Tu smo svaki dan, od 7 ujutro do 11 navečer.</p>
       <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
         <a href="kontakt.html" class="btn btn-primary">Gdje smo</a>
-        <a href="galerija.html" class="btn btn-ghost">Galerija</a>
+        <a href="https://maps.app.goo.gl/r9EeArFSdpamhQFi9" target="_blank" rel="noopener" class="btn btn-ghost">Ostavi recenziju</a>
       </div>
     </div>
   </div>
@@ -126,37 +221,24 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand-block">
-          <img src="logo.png" alt="Krasno logo">
-          <strong>Caffe bar Krasno</strong>
+    <div class="footer-row">
+      <div class="footer-brand-block">
+        <span class="brand-logo"><img src="logo.png" alt="Caffe bar Krasno logo"></span>
+        <div class="footer-brand-text">
+          <strong>Krasno</strong>
+          <span>Caffe Bar</span>
         </div>
-        <p>Mali caffe bar u Bukovcu, otvoreni svaki dan od 2014. Kava, biljar, sokovi, pivo, vikendom često živa muzika.</p>
       </div>
-      <div>
-        <h4>Stranice</h4>
-        <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="o-nama.html">O nama</a></li>
-          <li><a href="meni.html">Meni</a></li>
-          <li><a href="recenzije.html">Recenzije</a></li>
-          <li><a href="galerija.html">Galerija</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Posjeti nas</h4>
-        <ul>
-          <li>Bukovac gornji odv. III 1</li>
-          <li>10000 Zagreb</li>
-          <li><a href="tel:+385915664703">091 566 4703</a></li>
-          <li>Pon–Sub 7–23 · Ned 8–23</li>
-        </ul>
+      <div class="footer-meta">
+        <span>Bukovac gornji odv. III 1, Zagreb</span>
+        <span class="footer-meta-divider"></span>
+        <a href="tel:+385915664703">091 566 4703</a>
+        <span class="footer-meta-divider"></span>
+        <span>Pon–Sub 7–23 · Ned 8–23</span>
       </div>
     </div>
     <div class="footer-bottom">
-      © <span id="year"></span> Caffe bar Krasno. Sva prava pridržana.
+      © <span id="year"></span> Caffe bar Krasno
     </div>
   </div>
 </footer>

@@ -11,7 +11,7 @@
   <link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,8 +29,6 @@
       <li><a href="index.html" class="active">Početna</a></li>
       <li><a href="o-nama.html">O nama</a></li>
       <li><a href="meni.html">Meni</a></li>
-      <li><a href="recenzije.html">Recenzije</a></li>
-      <li><a href="galerija.html">Galerija</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
     <button class="menu-toggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navLinks">
@@ -117,18 +115,22 @@
 <section>
   <div class="container">
     <div class="center-text" data-reveal>
-      <span class="section-eyebrow" style="justify-content:center; display:inline-flex;">Slike</span>
-      <h2>Iz <em>kafića</em></h2>
+      <span class="section-eyebrow" style="justify-content:center; display:inline-flex;">Iz kafića</span>
+      <h2>Što <em>volimo raditi</em></h2>
     </div>
-    <div class="peek-grid" data-reveal>
-      <a href="galerija.html"><img src="gallery/interior-wall.png" alt="Interijer" loading="lazy"></a>
-      <a href="galerija.html"><img src="gallery/latte-heart.png" alt="Latte art" loading="lazy"></a>
-      <a href="galerija.html"><img src="gallery/billiard.png" alt="Biljar" loading="lazy"></a>
-      <a href="galerija.html"><img src="gallery/live-music.png" alt="Živa glazba" loading="lazy"></a>
-      <a href="galerija.html"><img src="gallery/juices-cake.png" alt="Sokovi i kolač" loading="lazy"></a>
-    </div>
-    <div class="center-text" style="margin-top: 36px;">
-      <a href="galerija.html" class="btn btn-ghost">Cijela galerija</a>
+    <div class="showcase-strip" data-reveal>
+      <div class="showcase-item">
+        <img src="gallery/hot-chocolate.png" alt="Topla čokolada" loading="lazy">
+        <span>Topla čokolada</span>
+      </div>
+      <div class="showcase-item">
+        <img src="gallery/latte-heart.png" alt="Latte art" loading="lazy">
+        <span>Latte art</span>
+      </div>
+      <div class="showcase-item">
+        <img src="gallery/live-music.png" alt="Muzika uživo" loading="lazy">
+        <span>Muzika uživo</span>
+      </div>
     </div>
   </div>
 </section>
@@ -145,37 +147,24 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand-block">
-          <img src="logo.png" alt="Krasno logo">
-          <strong>Caffe bar Krasno</strong>
+    <div class="footer-row">
+      <div class="footer-brand-block">
+        <span class="brand-logo"><img src="logo.png" alt="Caffe bar Krasno logo"></span>
+        <div class="footer-brand-text">
+          <strong>Krasno</strong>
+          <span>Caffe Bar</span>
         </div>
-        <p>Mali caffe bar u Bukovcu, otvoreni svaki dan od 2014. Kava, biljar, sokovi, pivo, vikendom često živa muzika.</p>
       </div>
-      <div>
-        <h4>Stranice</h4>
-        <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="o-nama.html">O nama</a></li>
-          <li><a href="meni.html">Meni</a></li>
-          <li><a href="recenzije.html">Recenzije</a></li>
-          <li><a href="galerija.html">Galerija</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Posjeti nas</h4>
-        <ul>
-          <li>Bukovac gornji odv. III 1</li>
-          <li>10000 Zagreb</li>
-          <li><a href="tel:+385915664703">091 566 4703</a></li>
-          <li>Pon–Sub 7–23 · Ned 8–23</li>
-        </ul>
+      <div class="footer-meta">
+        <span>Bukovac gornji odv. III 1, Zagreb</span>
+        <span class="footer-meta-divider"></span>
+        <a href="tel:+385915664703">091 566 4703</a>
+        <span class="footer-meta-divider"></span>
+        <span>Pon–Sub 7–23 · Ned 8–23</span>
       </div>
     </div>
     <div class="footer-bottom">
-      © <span id="year"></span> Caffe bar Krasno. Sva prava pridržana.
+      © <span id="year"></span> Caffe bar Krasno
     </div>
   </div>
 </footer>
